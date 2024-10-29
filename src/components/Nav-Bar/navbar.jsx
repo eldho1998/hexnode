@@ -1,4 +1,4 @@
-import "./navbar.css";
+import './navbar.css';
 
 const Navbar = () => {
   return (
@@ -8,7 +8,6 @@ const Navbar = () => {
         <p>Why Hexnode</p>
         <p>Features</p>
         <p>Platforms</p>
-        <p>Pricing</p>
         <p>Customers</p>
       </div>
       <div className="nav-second">

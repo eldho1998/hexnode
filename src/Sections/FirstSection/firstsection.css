@@ -1,27 +1,68 @@
 .firstsection {
   display: flex;
-  width: 100%;
-  height: 64vh;
+  flex-wrap: wrap;
+  height: auto;
+  min-height: 64vh;
   background-color: rgb(3 10 26);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 2rem;
+  gap: 1.5rem;
 }
 .firstSection1st {
   display: flex;
   flex-direction: column;
   color: whitesmoke;
-  gap: 20px;
-  margin-left: 100px;
+  max-width: 560px;
+  margin: 0 auto;
+  gap: 8px;
 }
 .firstSection2nd {
-  background-image: url("../../../public/uploads/banner.webp");
-  width: 600px;
-  height: 600px;
-  object-fit: fill;
+  background-image: url('../../../public/uploads/banner.webp');
+  width: 100%;
+  max-width: 600px;
+  height: 70vh;
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 100px;
+  background-size: cover;
+  background-position: center;
 }
-.firstSection1st h1 {
-  font-size: 45px;
+.gain p {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 55px;
+}
+.firstSection1st .unified p {
+  color: #73787a;
+}
+.hexnodes p {
+  color: #9ca2aa;
+  font-size: large;
+  line-height: 30px;
+}
+.emailbutton {
+  display: flex;
+  gap: 0.5rem;
+}
+.emailbutton input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  max-width: 250px;
+}
+.emailbutton .nav-second {
+  padding: 0.8rem 1.5rem;
+  background-color: #dd0735;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: lighter;
+  border: none;
+  transition: background-color 0.3s;
+}
+.emailbutton .nav-second:hover {
+  background-color: #b0062d;
 }
