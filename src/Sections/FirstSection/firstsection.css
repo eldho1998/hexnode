@@ -1,0 +1,27 @@
+.firstsection {
+  display: flex;
+  width: 100%;
+  height: 64vh;
+  background-color: rgb(3 10 26);
+  justify-content: space-around;
+  align-items: center;
+}
+.firstSection1st {
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  gap: 20px;
+  margin-left: 100px;
+}
+.firstSection2nd {
+  background-image: url("../../../public/uploads/banner.webp");
+  width: 600px;
+  height: 600px;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 100px;
+}
+.firstSection1st h1 {
+  font-size: 45px;
+}
