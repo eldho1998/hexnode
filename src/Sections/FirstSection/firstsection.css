@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  min-height: 64vh;
+  min-height: 56vh;
   background-color: rgb(3 10 26);
   justify-content: space-between;
   align-items: center;
@@ -14,17 +14,19 @@
   flex-direction: column;
   color: whitesmoke;
   max-width: 560px;
-  margin: 0 auto;
   gap: 8px;
+  margin-left: 15%;
 }
 .firstSection2nd {
-  background-image: url('../../../public/uploads/banner.webp');
+  background-image: url("../../../public/uploads/banner.webp");
   width: 100%;
   max-width: 600px;
-  height: 70vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
+  margin-right: 15%;
 }
 .gain p {
   font-size: 3rem;
