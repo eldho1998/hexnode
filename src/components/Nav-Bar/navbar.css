@@ -12,7 +12,7 @@
   color: rgb(255 255 255);
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
   overflow-x: hidden;
 }
 .NavBar.scrolled {
@@ -20,12 +20,12 @@
   color: black;
 }
 .NavBar h1 {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   cursor: pointer;
 }
 .nav-first {
   max-width: 44%;
-  margin-left: 15%;
+  margin-left: 6%;
   display: flex;
   gap: 25px;
   justify-content: center;
@@ -42,8 +42,9 @@
   transition: color 0.3s ease;
 }
 .nav-second button {
-  margin-right: 20rem;
-  width: 190px;
+  margin-right: 6rem;
+  width: 100%;
+  max-width: 12rem;
   height: 45px;
   background-color: #dd0735;
   color: whitesmoke;

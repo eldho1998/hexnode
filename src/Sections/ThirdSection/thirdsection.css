@@ -1,15 +1,18 @@
 .thirdSectionHeader {
   margin: 4% auto;
   text-align: center;
-  font-size: larger;
-  width: 35%;
-  min-height: 8vh;
-  font-weight: 150;
+  width: 90%;
+  min-width: 35rem;
+  min-height: 9vh;
+}
+.thirdSectionHeader h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
 }
 .thirdSection {
   width: 100%;
-  max-height: auto;
-  height: 64vh;
+  height: auto;
+  max-height: 64vh;
 }
 .card1,
 .card2,
@@ -17,15 +20,18 @@
 .card4 {
   border: 1px solid lightgray;
   border-radius: 15px;
-  width: 23%;
-  height: 25vh;
+  width: 100%;
+  max-width: 35%;
+  height: 45vh;
   padding: 20px;
-  font-size: larger;
+  font-size: 1rem;
+  padding: 20px;
   color: rgb(29, 28, 28);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 .thirdSectionfirst,
 .third-SectionSecond {

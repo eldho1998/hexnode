@@ -1,32 +1,33 @@
 .firstsection {
   display: flex;
-  flex-wrap: wrap;
-  height: auto;
-  min-height: 56vh;
+  height: 110vh;
   background-color: rgb(3 10 26);
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2rem;
   gap: 1.5rem;
+  width: 100%;
 }
 .firstSection1st {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   color: whitesmoke;
-  max-width: 560px;
-  gap: 8px;
-  margin-left: 15%;
+  width: 100rem;
+  max-height: 20vh;
+  gap: 0.2rem;
+  margin-left: 5%;
 }
 .firstSection2nd {
-  background-image: url("../../../public/uploads/banner.webp");
+  background-image: url('../../../public/uploads/banner.webp');
   width: 100%;
-  max-width: 600px;
-  height: 50vh;
+  height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin: 0 auto;
-  margin-right: 15%;
+  margin-right: 3rem;
+  margin-top: 15vh;
 }
 .gain p {
   font-size: 3rem;
