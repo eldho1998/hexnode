@@ -30,7 +30,7 @@
   display: flex;
   gap: 25px;
   justify-content: center;
-  align-items: center;
+  align-items: last baseline;
 }
 .NavBar:hover {
   background-color: rgb(255 255 255);
@@ -60,9 +60,41 @@
   .nav-second button {
     display: none;
   }
-
+  .nav-first {
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+  }
   .NavBar h1 {
     font-size: 1.5rem;
     margin-left: 1rem;
+  }
+}
+@media (max-width: 1366px) {
+  .NavBar {
+    padding: 0.8rem 1rem;
+  }
+
+  .NavBar h1 {
+    font-size: 1.8rem;
+  }
+
+  .nav-first {
+    margin-left: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    gap: 2rem;
+  }
+
+  .nav-second button {
+    margin-right: 4rem;
+    width: 12rem;
+    height: 7vh;
+    font-size: 14px;
+  }
+
+  .nav-first p {
+    font-size: 1rem;
   }
 }

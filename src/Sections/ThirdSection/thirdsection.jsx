@@ -1,4 +1,4 @@
-import "./thirdsection.css";
+import './thirdsection.css';
 
 const ThirdSection = () => {
   return (
