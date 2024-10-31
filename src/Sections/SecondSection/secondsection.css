@@ -3,9 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 20px;
   gap: 1.5rem;
   flex-wrap: wrap;
+  height: auto;
   max-height: 13vh;
   padding: 20px;
   box-sizing: content-box;
@@ -43,6 +44,10 @@
   padding: 1rem;
   width: 48vh;
 }
+.gartner {
+  padding: 1rem;
+  width: 48vh;
+}
 
 .idc:hover {
   margin-bottom: 10px;
@@ -59,10 +64,7 @@
   cursor: pointer;
   transition: 0.4s;
 }
-.gartner {
-  padding: 1rem;
-  width: 48vh;
-}
+
 .forresterHead {
   background-image: url("../../../public/uploads/forrester.webp");
   width: 110px;
@@ -70,4 +72,78 @@
   background-repeat: no-repeat;
   background-size: contain;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .secondSection {
+    flex-direction: column;
+    max-height: auto;
+    padding: 1.5rem;
+  }
+
+  .idc,
+  .gartner,
+  .forrester {
+    width: 100%;
+    text-align: center;
+  }
+
+  .idcContent,
+  .gartnerContent,
+  .forresterContent p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .secondSection {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .idcHead,
+  .gartnerHead,
+  .forresterHead {
+    width: 80px;
+    height: 22px;
+  }
+
+  .idcContent,
+  .gartnerContent,
+  .forresterContent p {
+    font-size: 0.8rem;
+  }
+
+  .idc,
+  .gartner,
+  .forrester {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .secondSection {
+    padding: 0.5rem;
+  }
+
+  .idcHead,
+  .gartnerHead,
+  .forresterHead {
+    width: 70px;
+    height: 20px;
+  }
+
+  .idcContent,
+  .gartnerContent,
+  .forresterContent p {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .idc,
+  .gartner,
+  .forrester {
+    width: 100%;
+    padding: 0.5rem;
+  }
 }

@@ -23,23 +23,6 @@ const ThirdSection = () => {
           </div>
           <div className="card2">
             <div className="third-head">
-              <h3>Zero compromise security</h3>
-            </div>
-            <div className="third-content">
-              <p>
-                Enable full-fledged device encryption, data loss<br></br>
-                prevention, and all-rounded device security <br></br>with
-                Hexnode UEM. Be at the bleeding edge of <br></br>device security
-                without any compromises.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flow"></div>
-
-        <div className="third-SectionSecond">
-          <div className="card3">
-            <div className="third-head">
               <h3>
                 Get more done with
                 <br /> automation
@@ -51,6 +34,25 @@ const ThirdSection = () => {
                 <br /> IT’s time spent on mundane and repetitive
                 <br /> tasks. Do hours’ worth of work in a few <br />
                 minutes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flow">
+          <h1>Flow</h1>
+        </div>
+
+        <div className="third-SectionSecond">
+          <div className="card3">
+            <div className="third-head">
+              <h3>Zero compromise security</h3>
+            </div>
+            <div className="third-content">
+              <p>
+                Enable full-fledged device encryption, data loss<br></br>
+                prevention, and all-rounded device security <br></br>with
+                Hexnode UEM. Be at the bleeding edge of <br></br>device security
+                without any compromises.
               </p>
             </div>
           </div>
