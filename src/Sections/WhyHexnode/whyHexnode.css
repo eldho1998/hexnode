@@ -1,0 +1,160 @@
+.thirdSectionHeader {
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  min-width: 35rem;
+  min-height: 9vh;
+}
+.thirdSectionHeader h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.thirdSection {
+  width: 100%;
+  max-height: 100%;
+  height: 75vh;
+  background-color: #f7f7f7;
+}
+.why {
+  margin-top: 5rem;
+}
+
+.flow {
+  background-image: url("../../../public/uploads/hexnode-app-icon.svg");
+  max-width: 100px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 55%;
+  height: 35vh;
+  padding: 20px;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: white;
+  color: rgb(29, 28, 28);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.img1,
+.img2,
+.img3,
+.img4 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 45px;
+  max-width: 50%;
+}
+.img2 {
+  background-image: url("../../../public/uploads/play.jpeg");
+}
+.img1 {
+  background-image: url("../../../public/uploads/recycle.webp");
+}
+.img3 {
+  background-image: url("../../../public/uploads/verify.png");
+}
+.img4 {
+  background-image: url("../../../public/uploads/note.png");
+}
+
+.third-head {
+  display: flex;
+  width: 150px;
+}
+
+.third-content .hover-text {
+  display: none;
+  color: #e91e63;
+  font-size: medium;
+  opacity: 0;
+  transition: opacity 1.9s ease;
+}
+.third-content:hover .hover-text {
+  display: block;
+  opacity: 0.8;
+}
+.thirdSectionfirst,
+.third-SectionSecond {
+  display: flex;
+  width: 100%;
+  max-width: 55%;
+  height: 25vh;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 10rem auto;
+}
+
+@media (max-width: 657px) and (max-height: 824px) {
+  .thirdSectionHeader {
+    margin: 1rem auto;
+    width: 100%;
+    min-width: auto;
+    padding: 0 1rem;
+  }
+
+  .thirdSectionHeader h1 {
+    font-size: 1.8rem;
+  }
+
+  .thirdSection {
+    padding: 1rem;
+  }
+
+  .thirdSectionfirst,
+  .third-SectionSecond {
+    max-width: 90%;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .thirdSectionfirst {
+    display: flex;
+    height: auto;
+    gap: 40px;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    max-width: 100%;
+    height: auto;
+    font-size: 0.9rem;
+  }
+
+  .cards {
+    display: block;
+    margin: 0 auto;
+  }
+  .third-SectionSecond {
+    display: flex;
+    height: auto;
+    gap: 40px;
+  }
+  .flow {
+    display: none;
+  }
+}

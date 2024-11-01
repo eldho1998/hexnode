@@ -26,7 +26,7 @@
 }
 .nav-first {
   max-width: 56rem;
-  margin-left: 20rem;
+  margin-left: 18.5rem;
   display: flex;
   gap: 25px;
   justify-content: center;
@@ -96,5 +96,33 @@
 
   .nav-first p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 657px) and (max-height: 824px) {
+  .NavBar {
+    display: none;
+  }
+
+  .NavBar h1 {
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-first {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-second button {
+    width: 160px;
+    height: 40px;
+    margin: 0;
+  }
+
+  .nav-first p {
+    font-size: 0.9rem;
   }
 }
