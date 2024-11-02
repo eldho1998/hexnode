@@ -20,7 +20,7 @@
   margin-left: 17rem;
 }
 .firstSection2nd {
-  background-image: url("../../../public/uploads/banner.webp");
+  background-image: url('../../../public/uploads/banner.webp');
   width: 100%;
   max-width: 35rem;
   height: 50vh;
@@ -190,7 +190,7 @@
     margin: 1px auto;
     margin-right: 0.1rem;
     position: relative;
-    top: 150px;
+    top: 100px;
     transition: top 0.5s ease, opacity 0.5s ease;
   }
 

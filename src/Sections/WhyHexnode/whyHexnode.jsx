@@ -1,4 +1,4 @@
-import "./whyHexnode.css";
+import './whyHexnode.css';
 
 const WhyHexnode = () => {
   return (
@@ -12,7 +12,7 @@ const WhyHexnode = () => {
             <div className="card1">
               <div className="third-head">
                 <div className="img1"></div>
-                <h3>Adapt to the new normal</h3>
+                <h2>Adapt to the new normal</h2>
               </div>
               <div className="third-content">
                 <p>
@@ -27,7 +27,7 @@ const WhyHexnode = () => {
             <div className="card2">
               <div className="third-head">
                 <div className="img2"></div>
-                <h3>Get more done with automation</h3>
+                <h2>Get more done with automation</h2>
               </div>
               <div className="third-content">
                 <p>
@@ -49,7 +49,7 @@ const WhyHexnode = () => {
             <div className="card3">
               <div className="third-head">
                 <div className="img3"></div>
-                <h3>Zero compromise security</h3>
+                <h2>Zero compromise security</h2>
               </div>
               <div className="third-content">
                 <p>
@@ -64,7 +64,7 @@ const WhyHexnode = () => {
             <div className="card4">
               <div className="third-head">
                 <div className="img4"></div>
-                <h3>Unified Policy Management</h3>
+                <h2>Unified Policy Management</h2>
               </div>
               <div className="third-content">
                 <p>
