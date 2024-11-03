@@ -189,8 +189,11 @@
     font-size: 0.85rem;
   }
 
-  .features-head {
+  .features-head h1 {
     margin: 15px auto;
+    position: relative;
+    top: 100;
+    font-size: x-large;
   }
 
   .features {

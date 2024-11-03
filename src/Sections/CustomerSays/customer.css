@@ -1,13 +1,242 @@
 .customer {
-  width: 100%;
   text-align: center;
-  height: 100%;
-  max-height: 285vh;
+  width: 100%;
+  height: 120vh;
 }
 
 .customer-head {
-  height: 20vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.picture1 {
+  background-image: url('../../../public/uploads/justin-modrak.webp');
+}
+.picture2 {
+  background-image: url('../../../public/uploads/dalibor-kruljac.webp');
+}
+.picture3 {
+  background-image: url('../../../public/uploads/chris-robinson.webp');
+}
+.picture1,
+.picture2,
+.picture3 {
+  height: 50vh;
+  width: 30rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.testimonial {
+  display: flex;
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 18px;
+  margin: auto;
+}
+
+.first-person {
+  display: flex;
+}
+.third-person {
+  display: flex;
+  width: 180rem;
+}
+.third-person .third-person-msg {
+  font-size: 23px;
+}
+.message {
+  height: 28vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  background-color: rgb(247 247 247);
+}
+.message h2 {
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.name {
+  height: 22vh;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(234 235 235);
+}
+.message-and-name {
+  width: 100%;
+  height: auto;
+}
+.name {
+  padding: 2rem 3rem;
+  display: flex;
+  line-height: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name h2 {
+  width: 10rem;
+  font-size: large;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.name p {
+  width: 15rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 13px;
+  color: rgb(82, 78, 78);
+}
+
+.slide {
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  animation: scroll 20s linear infinite;
+}
+.testimonial::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  flex: none;
+  padding: 5px;
+}
+.gallery-wrap {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrows {
+  margin-left: 100px;
+  cursor: pointer;
+  background-image: url('../../../public/uploads/prev-arrow-icon-black.svg');
+  width: 50px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrows2 {
+  background-image: url('../../../public/uploads/next-arrow-icon-black.svg');
+  width: 50px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-left: 100px;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+}
+
+@media (max-width: 991px) {
+  .customer {
+    height: 100vh;
+  }
+
+  .customer-head {
+    height: 20vh;
+  }
+
+  .picture1,
+  .picture2,
+  .picture3 {
+    height: 40vh;
+    width: 20rem;
+  }
+
+  .testimonial {
+    max-width: 700px;
+  }
+
+  .message h2 {
+    font-size: large;
+  }
+
+  .name h2 {
+    font-size: medium;
+  }
+
+  .name p {
+    font-size: 12px;
+  }
+
+  .arrows,
+  .arrows2 {
+    width: 40px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .customer {
+    height: 90vh;
+  }
+
+  .customer-head h1 {
+    font-size: 1.5rem;
+  }
+
+  .picture1,
+  .picture2,
+  .picture3 {
+    height: 35vh;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .testimonial {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .message {
+    height: auto;
+    padding: 10px;
+  }
+
+  .message h2 {
+    font-size: 1rem;
+  }
+
+  .name h2 {
+    font-size: 0.9rem;
+  }
+
+  .name p {
+    font-size: 11px;
+  }
+
+  .gallery-wrap {
+    height: auto;
+  }
+
+  .arrows,
+  .arrows2 {
+    width: 30px;
+    height: 20px;
+  }
 }
