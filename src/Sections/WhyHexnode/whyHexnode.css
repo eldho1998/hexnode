@@ -3,7 +3,12 @@
   text-align: center;
   width: 90%;
   min-width: 35rem;
-  min-height: 30vh;
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.third-head {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,12 +20,12 @@
 .thirdSection {
   width: 100%;
   max-height: 100%;
-  height: 75vh;
+  height: 80vh;
   background-color: #f7f7f7;
 }
 
 .flow {
-  background-image: url('../../../public/uploads/hexnode-app-icon.svg');
+  background-image: url("../../../public/uploads/hexnode-app-icon.svg");
   max-width: 100px;
   width: 100%;
   background-repeat: no-repeat;
@@ -54,21 +59,21 @@
 .img4 {
   background-repeat: no-repeat;
   background-size: contain;
-  height: 30px;
-  width: 45px;
-  max-width: 50%;
+  height: 10px;
+  max-width: 70px;
+  width: 60%;
 }
 .img2 {
-  background-image: url('../../../public/uploads/play.jpeg');
+  background-image: url("../../../public/uploads/play.jpeg");
 }
 .img1 {
-  background-image: url('../../../public/uploads/recycle.webp');
+  background-image: url("../../../public/uploads/recycle.webp");
 }
 .img3 {
-  background-image: url('../../../public/uploads/verify.png');
+  background-image: url("../../../public/uploads/verify.png");
 }
 .img4 {
-  background-image: url('../../../public/uploads/note.png');
+  background-image: url("../../../public/uploads/note.png");
 }
 
 .third-head h2 {
@@ -271,18 +276,31 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   .thirdSectionHeader {
-    margin: 0.5rem auto;
+    margin: 0;
     width: 100%;
+    height: 50px;
     padding: 0 1rem;
+    position: relative;
+    bottom: 50px;
   }
 
   .thirdSectionHeader h1 {
     font-size: 1.7rem;
   }
-
+  .third-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    gap: 10px;
+  }
+  .third-head h2 {
+    font-size: large;
+  }
   .thirdSection {
     padding: 1rem;
-    height: auto;
+    height: 100%;
+    max-height: 105vh;
   }
 
   .thirdSectionfirst,
@@ -303,14 +321,16 @@
 
   .cards {
     margin: 4rem auto;
+    position: relative;
+    bottom: 150px;
   }
 
   .img1,
   .img2,
   .img3,
   .img4 {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -447,8 +467,12 @@
   }
 
   .cards {
+    position: relative;
+    bottom: 20vh;
     margin: 2rem auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .img1,

@@ -1,14 +1,14 @@
-import './customer.css';
-import Sliderr from '../../slider/slider';
-import { useEffect } from 'react';
+import "./customer.css";
+import Sliderr from "../../slider/slider";
+import { useEffect } from "react";
 
 const Customer = () => {
   useEffect(() => {
-    const scrollContainer = document.querySelector('.testimonial');
-    const backBtn = document.getElementById('backBtn');
-    const nextBtn = document.getElementById('nextBtn');
+    const scrollContainer = document.querySelector(".testimonial");
+    const backBtn = document.getElementById("backBtn");
+    const nextBtn = document.getElementById("nextBtn");
 
-    const handleScroll = evt => {
+    const handleScroll = (evt) => {
       evt.preventDefault();
       scrollContainer.scrollLeft += evt.deltaY;
     };
@@ -18,14 +18,14 @@ const Customer = () => {
     };
     const scrollRight = () => (scrollContainer.scrollLeft += 900);
 
-    scrollContainer.addEventListener('wheel', handleScroll);
-    backBtn.addEventListener('click', scrollLeft);
-    nextBtn.addEventListener('click', scrollRight);
+    scrollContainer.addEventListener("wheel", handleScroll);
+    backBtn.addEventListener("click", scrollLeft);
+    nextBtn.addEventListener("click", scrollRight);
 
     return () => {
-      scrollContainer.removeEventListener('wheel', handleScroll);
-      backBtn.removeEventListener('click', scrollLeft);
-      nextBtn.removeEventListener('click', scrollRight);
+      scrollContainer.removeEventListener("wheel", handleScroll);
+      backBtn.removeEventListener("click", scrollLeft);
+      nextBtn.removeEventListener("click", scrollRight);
     };
   }, []);
 
@@ -38,7 +38,7 @@ const Customer = () => {
         <div
           className="arrows"
           id="backBtn"
-          style={{ cursor: 'pointer', zIndex: 1 }}
+          style={{ cursor: "pointer", zIndex: 1 }}
         ></div>
 
         <div className="testimonial ">
@@ -49,8 +49,8 @@ const Customer = () => {
               <div className="message-and-name">
                 <div className="message">
                   <h2>
-                    "Hexnode is of great value. Works great with
-                    <h2> Android and iOS!"</h2>
+                    Hexnode is of great value. Works great with
+                    <h2> Android and iOS</h2>
                   </h2>
                 </div>
                 <div className="name">
@@ -66,8 +66,8 @@ const Customer = () => {
               <div className="message-and-name">
                 <div className="message">
                   <h2>
-                    "Most complete MDM solution I found, and I<br />
-                    <h2> tested many of them, including major names"</h2>
+                    Most complete MDM solution I found, and I<br />
+                    <h2> tested many of them, including major names</h2>
                   </h2>
                 </div>
                 <div className="name">
@@ -83,8 +83,8 @@ const Customer = () => {
               <div className="message-and-name">
                 <div className="message">
                   <h2 className="third-person-msg">
-                    "it seemed to be in-line with everything we were
-                    <h2 className="third-person-msg"> looking at."</h2>
+                    it seemed to be in-line with everything we were
+                    <h2 className="third-person-msg"> looking at</h2>
                   </h2>
                 </div>
                 <div className="name">
@@ -96,11 +96,9 @@ const Customer = () => {
           </div>
         </div>
         <div className="arrows2" id="nextBtn"></div>
+        <Sliderr />
       </div>
-
-      <Sliderr />
     </div>
   );
 };
-
 export default Customer;
