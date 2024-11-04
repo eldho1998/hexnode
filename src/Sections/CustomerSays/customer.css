@@ -1,0 +1,438 @@
+.customer {
+  text-align: center;
+  width: 100%;
+  height: 120vh;
+}
+
+.customer-head {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.picture1 {
+  background-image: url("../../../public/uploads/justin-modrak.webp");
+}
+.picture2 {
+  background-image: url("../../../public/uploads/dalibor-kruljac.webp");
+}
+.picture3 {
+  background-image: url("../../../public/uploads/chris-robinson.webp");
+}
+.picture1,
+.picture2,
+.picture3 {
+  height: 50vh;
+  width: 30rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.testimonial {
+  display: flex;
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 18px;
+  margin: auto;
+}
+
+.first-person {
+  display: flex;
+}
+.first-person {
+  display: flex;
+  width: 180rem;
+}
+.first-person .first-person-msg {
+  font-size: 23px;
+}
+.message {
+  height: 28vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  background-color: rgb(247 247 247);
+}
+.message h2 {
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.name {
+  height: 22vh;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(234 235 235);
+}
+.message-and-name {
+  width: 100%;
+  height: auto;
+}
+.name {
+  padding: 2rem 3rem;
+  display: flex;
+  line-height: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name h2 {
+  width: 10rem;
+  font-size: large;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.name p {
+  width: 15rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 13px;
+  color: rgb(82, 78, 78);
+}
+
+.slide {
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  animation: scroll 20s linear infinite;
+}
+.testimonial::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  flex: none;
+  padding: 5px;
+}
+.gallery-wrap {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrows {
+  margin-left: 100px;
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrows2 {
+  width: 50px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-left: 100px;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+}
+
+@media (max-width: 1920px) {
+  .customer {
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+  }
+
+  .customer-head {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .picture1,
+  .picture2,
+  .picture3 {
+    height: 40vh;
+    width: 30rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .picture1 {
+    background-image: url("../../../public/uploads/justin-modrak.webp");
+  }
+  .picture2 {
+    background-image: url("../../../public/uploads/dalibor-kruljac.webp");
+  }
+  .picture3 {
+    background-image: url("../../../public/uploads/chris-robinson.webp");
+  }
+
+  .testimonial {
+    display: flex;
+    margin: auto;
+    width: 112rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  .testimonial::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slide {
+    display: flex;
+    gap: 1rem;
+    scroll-snap-type: x mandatory;
+  }
+
+  .first-person,
+  .first-person {
+    display: flex;
+    flex: 1;
+  }
+
+  .message-and-name {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .message {
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    background-color: rgb(247, 247, 247);
+  }
+
+  .message h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .name {
+    padding: 1rem 2rem;
+    height: 12vh;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(234, 235, 235);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .name h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .name p {
+    font-size: 0.9rem;
+    color: rgb(82, 78, 78);
+  }
+
+  .gallery-wrap {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrows,
+  .arrows2 {
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .arrows {
+    margin-right: 20px;
+  }
+
+  .arrows2 {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .customer {
+    height: 85vh;
+  }
+  .customer-head {
+    height: 15vh;
+  }
+  .picture1,
+  .picture2,
+  .picture3 {
+    height: 40vh;
+    width: 30rem;
+  }
+  .testimonial {
+    max-width: 900px;
+  }
+  .first-person .first-person-msg {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .customer {
+    height: 110vh;
+  }
+  .customer-head {
+    height: 22vh;
+  }
+  .picture1,
+  .picture2,
+  .picture3 {
+    height: 45vh;
+    width: 28rem;
+  }
+  .testimonial {
+    max-width: 800px;
+  }
+  .first-person .first-person-msg {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .customer {
+    height: 100vh;
+    width: 100%;
+  }
+  .customer-head {
+    height: 20vh;
+  }
+  .picture1,
+  .picture2,
+  .picture3 {
+    height: 40vh;
+    width: 25rem;
+  }
+  .testimonial {
+    max-width: 700px;
+  }
+  .first-person .first-person-msg {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .customer {
+    height: 90vh;
+  }
+  .customer-head {
+    height: 18vh;
+  }
+  .picture1,
+  .picture2,
+  .picture3 {
+    height: 38vh;
+    width: 24rem;
+  }
+  .testimonial {
+    max-width: 680px;
+  }
+  .first-person .first-person-msg {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .customer {
+    height: 85vh;
+  }
+  .customer-head {
+    height: 16vh;
+  }
+  .first-person {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+  }
+  .picture1,
+  .picture2,
+  .picture3 {
+    height: 35vh;
+    width: 22rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .message-and-name {
+    height: 35vh;
+  }
+  .testimonial {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  .first-person .first-person-msg {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .customer {
+    height: 90vh;
+  }
+  .customer-head {
+    height: 15vh;
+  }
+  .picture1,
+  .picture2,
+  .picture3 {
+    height: 30vh;
+    width: 20rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .testimonial {
+    max-width: 500px;
+  }
+  .first-person {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+  }
+  .message-and-name {
+    height: 25vh;
+  }
+  .first-person .first-person-msg {
+    font-size: 14px;
+  }
+  .message h2 {
+    font-size: medium;
+  }
+  .name h2 {
+    font-size: medium;
+  }
+  .name p {
+    font-size: 11px;
+  }
+}
