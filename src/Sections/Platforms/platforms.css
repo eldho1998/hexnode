@@ -6,6 +6,7 @@
   background-color: #f7f7f7;
   width: 100%;
   padding: 20px 0;
+  height: 90vh;
 }
 
 .platform-head1 {
@@ -62,7 +63,7 @@
 }
 
 .image1 {
-  background-image: url('../../../public/uploads/android.webp');
+  background-image: url("../../../public/uploads/android.webp");
 }
 
 .image1,
@@ -79,23 +80,23 @@
 }
 
 .image2 {
-  background-image: url('../../../public/uploads/iOS.webp');
+  background-image: url("../../../public/uploads/iOS.webp");
 }
 
 .image3 {
-  background-image: url('../../../public/uploads/macOS.webp');
+  background-image: url("../../../public/uploads/macOS.webp");
 }
 
 .image4 {
-  background-image: url('../../../public/uploads/windows.webp');
+  background-image: url("../../../public/uploads/windows.webp");
 }
 
 .image5 {
-  background-image: url('../../../public/uploads/tvOS.webp');
+  background-image: url("../../../public/uploads/tvOS.webp");
 }
 
 .image6 {
-  background-image: url('../../../public/uploads/fireOS.webp');
+  background-image: url("../../../public/uploads/fireOS.webp");
 }
 
 .platformNames {
